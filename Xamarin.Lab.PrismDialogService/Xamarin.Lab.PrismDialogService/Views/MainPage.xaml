@@ -6,6 +6,9 @@
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
         <Button Text="ShowAlert" Command="{Binding OnShowAlert}" />
+        <Button Text="ShowConfirm" Command="{Binding OnShowConfirm}" />
+        <Button Text="ShowSheet" Command="{Binding OnShowSheet}" />
+        <Button Text="MyAlert" Command="{Binding OnMyAlert}" />
     </StackLayout>
 
 </ContentPage>

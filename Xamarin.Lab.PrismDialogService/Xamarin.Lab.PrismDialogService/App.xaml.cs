@@ -30,6 +30,7 @@ namespace Xamarin.Lab.PrismDialogService
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterDialog<MyAlert, MyAlertModel>("MyAlert");
         }
     }
 }

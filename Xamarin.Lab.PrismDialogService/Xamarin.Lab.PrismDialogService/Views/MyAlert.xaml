@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Xamarin.Lab.PrismDialogService.Views.MyAlert">
+    <Grid BackgroundColor="White" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <BoxView Color="Black" />
+        <Label Text="{Binding Title}"
+          BackgroundColor="Black"
+           Margin="20,5"
+           TextColor="White" />
+        <Label Text="{Binding Message}"
+           Margin="20,0,20,10"
+           Grid.Row="1" />
+        <Button Text="Ok"
+            Command="{Binding OnClose}"
+            HorizontalOptions="Center"
+            Margin="0,0,0,10"
+            Grid.Row="2"/>
+    </Grid>
+</ContentView>
